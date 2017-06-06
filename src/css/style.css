@@ -1,21 +1,26 @@
-#root{
+/*#root{
   position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   overflow-y: scroll;
+}*/
+div{
+    display: inline;
 }
-
 footer {
     background: url('https://mdn.mozillademos.org/files/11987/startransparent.gif') center center no-repeat, linear-gradient(red, yellow);
     text-align: center;
     display: inline-block;
+    width: 1520px;
+	height: 150px;
 }
 
 h1 {
     height: 100px; 
     font-family: "Times New Roman", sans-serif;
     size: 36px;
+    width: 1520px;
     text-align: center;
 }
 
@@ -27,8 +32,6 @@ h1 {
     background-position:  top right, bottom left;
     background-size:  20px 20px, 20px 20px;
     background-repeat: no-repeat;
-
-
 }
 /* 
   background: url("https://ununsplash.imgix.net/uploads/141202616623001715bb7/c1b3b9b0?q=75&fm=jpg&s=07faf9fb6409579bda59881970b284d1"), url("https://unsplash.imgix.net/photo-1419064642531-e575728395f2?q=75&fm=jpg&s=490dffe2e11f468947891ab40651e176");
@@ -80,7 +83,6 @@ hr:before {
   border-color: #ff0000; 
   border-width: 0 0 10px 0; 
   border-radius: 15px; 
-
 }
 
 /*

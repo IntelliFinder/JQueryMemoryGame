@@ -4,6 +4,7 @@ var Counter = 0;
 var ImgFound = 0;
 
 var Source = "#boxcard";
+var SecondSource="#boxcard2";
 
 var ImgSource = [
 "https://image.ibb.co/bHAZ8F/pic.jpg",
@@ -38,6 +39,8 @@ function ShuffleImages() {
 		$("#" + ImgThis.attr("id") + " img").attr("src", ImgArr[RandomNumber]);
 		ImgArr.splice(RandomNumber, 1);
 		ImgThis = ImgThis.next();
+		if(z==8){$(Source).append("<hr>"); }
+		
 	}
 }
 
@@ -98,11 +101,12 @@ function OpenCard() {
 }
 
 $(function() {
-
+	count=0;
 for (var y = 1; y < 3 ; y++) {
 	$.each(ImgSource, function(i, val) {
 		$(Source).append("<div id=card" + y + i + "><img src=" + val + " />");
-	});
+	});	
+	
 }
 	$(Source + " div").click(OpenCard);
 	ShuffleImages();
