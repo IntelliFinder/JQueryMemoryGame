@@ -17,22 +17,31 @@ footer {
 }
 
 h1 {
-    height: 100px; 
     font-family: "Times New Roman", sans-serif;
     size: 36px;
-    width: 1520px;
     text-align: center;
+
 }
+.page-header{
+        width: 1520px;
+    height: 100px; 
 
-/*background: url("https://mdn.mozillademos.org/files/11987/startransparent.gif") #FFEE99 3em 50% no-repeat;*/
-
-.page-header {
-   background: red;
+    background: 
+linear-gradient(63deg, #999 23%, transparent 23%) 7px 0, 
+linear-gradient(63deg, transparent 74%, #999 78%), 
+linear-gradient(63deg, transparent 34%, #999 38%, #999 58%, transparent 62%), 
+red;
     background-image: url("https://mdn.mozillademos.org/files/11987/startransparent.gif"), url("https://mdn.mozillademos.org/files/11987/startransparent.gif");
     background-position:  top right, bottom left;
     background-size:  20px 20px, 20px 20px;
     background-repeat: no-repeat;
 }
+
+
+
+/*background: url("https://mdn.mozillademos.org/files/11987/startransparent.gif") #FFEE99 3em 50% no-repeat;*/
+
+
 /* 
   background: url("https://ununsplash.imgix.net/uploads/141202616623001715bb7/c1b3b9b0?q=75&fm=jpg&s=07faf9fb6409579bda59881970b284d1"), url("https://unsplash.imgix.net/photo-1419064642531-e575728395f2?q=75&fm=jpg&s=490dffe2e11f468947891ab40651e176");
   background-size: 210%, 200%;
